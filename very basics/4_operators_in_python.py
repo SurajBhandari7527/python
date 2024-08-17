@@ -1,0 +1,12 @@
+a=input("Enter any number")
+b=input("Enter second number")
+sum= int(a)+ int(b)
+difference = int(a)-int(b)
+division= float(a)/int(b)
+product= int(a)*int(b)
+power=int(a)**int(b) # a to the power b
+print("The sum is",sum)
+print("The difference is",difference)
+print("The division is",division)
+print("The product is ",product)
+print(a ,"to the power", b ,"is",power)
