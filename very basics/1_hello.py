@@ -1,7 +1,0 @@
-print (" Hello how are you ")
-print("My name is suraj")
-print("khate ko ban")
-print (" Hello how are you ")
-print("My name is suraj")
-print("khate ko ban 2" )
-print(56)
