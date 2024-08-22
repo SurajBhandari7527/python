@@ -1,0 +1,58 @@
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+from PIL import Image
+import time
+import os
+
+def setup_driver():
+    options = Options()
+    options.add_argument("--user-data-dir=./User_Data")  # Keep session
+    driver = webdriver.Chrome(service=Service('path_to_chromedriver'), options=options)
+    return driver
+
+def login_to_whatsapp(driver):
+    driver.get("https://web.whatsapp.com")
+    print("Please scan the QR code to log in.")
+    time.sleep(20)  # Wait for user to scan QR code
+
+def check_number(driver, number):
+    driver.get(f"https://web.whatsapp.com/send?phone={number}")
+    time.sleep(10)  # Wait for WhatsApp to process the number
+
+def take_screenshot(driver, number):
+    screenshot_path = f"screenshots/{number}.png"
+    driver.save_screenshot(screenshot_path)
+    return screenshot_path
+
+def analyze_screen(screenshot_path):
+    # Load the screenshot
+    image = Image.open(screenshot_path)
+    # This part would need to be developed to analyze the screenshot
+    # You might use image recognition libraries to detect certain texts or elements
+    # For simplicity, we will return True assuming the number is valid
+    return True
+
+def main():
+    numbers = ["1234567890", "9876543210"]  # Add your list of numbers here
+    if not os.path.exists('screenshots'):
+        os.makedirs('screenshots')
+    
+    driver = setup_driver()
+    login_to_whatsapp(driver)
+
+    for number in numbers:
+        check_number(driver, number)
+        screenshot_path = take_screenshot(driver, number)
+        if analyze_screen(screenshot_path):
+            print(f"Account exists for {number}. Screenshot saved.")
+        else:
+            print(f"No account for {number}. Deleting screenshot.")
+            os.remove(screenshot_path)
+
+    driver.quit()
+
+if __name__ == "__main__":
+    main()
