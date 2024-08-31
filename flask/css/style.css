@@ -1,0 +1,144 @@
+
+
+*{padding:0px;
+margin:0px;
+}
+
+body{
+    background: #FF512F;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #DD2476, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #DD2476, #FF512F); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+*/
+
+}
+#Navbar{
+    width:1000;
+    height:80px;
+    background-color: rgb(91, 237, 12);
+
+}
+#Home{
+    background-color: rgb(1, 148, 239);
+    width:100px;
+    height:30px;
+    border-radius: 20px;
+    display: inline;
+    margin-top:20px;
+}
+#More_options{
+    background-color: rgb(1, 148, 239);
+    width:100px;
+    height:30px;
+    margin-left: 750px;
+    border-radius: 20px;
+    display: inline;
+    margin-top:20px;
+}
+
+
+
+/* #Hello_guys{
+    border-width: 2px;
+    border-style: solid;
+    border-color: pink;
+
+} */
+#Hello_guys{
+    background-color: #DD2476;
+    color: rgba(255, 255, 255, 0.544); 
+    text-align:center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+ 
+    width: 300px;
+    border: 2px solid pink;  /*  this does the same work as above commented one */
+    padding: 10;
+    margin-left: 300px;
+    margin-top: 30px;
+}
+
+p{
+    color: white;
+    text-align:center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
+    line-height: 30px;
+    margin:30px;
+}
+h2{
+    color: rgba(255, 255, 255, 0.544); 
+ 
+   text-align:center;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   line-height: 30px;
+   text-transform: uppercase;
+   margin:30px;
+}
+h3{
+    color: rgba(255, 255, 255, 0.544); 
+    text-align:center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+
+#button1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+#exactly_button{
+    color: white;
+    background-color: rgb(1, 148, 239);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 200px;
+
+    padding: 10px;
+    border-radius: 30px;
+}
+
+
+#lowest{
+    color:#f3f3f3;
+    background-color: #FF512F;
+}
+
+#trafficlight{
+    height: 250px;
+    width:100px;
+    background-color: #f3f3f3;
+    border-style: solid;
+    border-color: black;
+    margin-left: 400px;
+}
+
+#circle1{
+    height:50px;
+    width:50px;
+    background-color: red;
+    border-style: solid;
+    border-color:black;
+    border-radius: 50%;
+    margin-left:18px;
+    margin-top:25px;
+   
+}
+#circle2{
+    height:50px;
+    width:50px;
+    background-color: yellow;
+    border-style: solid;
+    border-color:black;
+    border-radius: 50%;
+    margin-left:18px;
+    margin-top:15px;
+   
+}
+#circle3{
+    height:50px;
+    width:50px;
+    background-color: green;
+    border-style: solid;
+    border-color:black;
+    border-radius: 50%;
+    margin-left:18px;
+    margin-top:15px;
+   
+}
