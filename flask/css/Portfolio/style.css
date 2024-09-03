@@ -1,54 +1,304 @@
-*{
-    margin: 0;
+*{  color:white;
     padding: 0;
+    margin: 0;
 }
+
 body{
-    background-color: green;
+  background-color: #050c9c;
 }
-#something{
-    text-align: center;
-    text-decoration: underline;
-    font-weight: bolder;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 80px;
-    line-height:90px;
-    text-transform: uppercase;
+.Header{
+    padding:30px;
+    text-decoration: none;
+    display:flex;
+    justify-content: end;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
 }
-#div1{
 
+ #Name{
+    
     position: absolute;
-    width: 50px;
-    height: 50px;
-    
-    border-radius: 50%;
-    margin-top: 30px;
-    padding: 30px;
-    margin-left: 90px;
+    left: 50px;
+    text-decoration: none ;
+    font-size: 30px;
     text-align: center;
-    height: 40px;
- 
-    border: 2px dashed red;
-    background-color: rgba(255,200,30,1);
-    display:inline;
-    z-index: 0;
-}
-#div2{
-    position:absolute;
-    width: 50px;
-    height: 50px;
-    
-    border-radius: 50%;
-    margin-top: 30px;
-    padding: 30px;
+ }
+ #Projects{
+    height:30px;
+    width:100px;
+    margin-right: 50px;
+    text-decoration: none ;
+    font-size: 20px;
     text-align: center;
-    height: 40px;
- 
-    border: 2px dashed red;
-    background-color: rgba(255,200,30,1);
-    display: inline;
-    z-index: -1;    
+    animation: s 5s ease ;
+ }
+
+ #About_Me{
+    height:30px;
+    width:100px;
+    margin-right: 50px;
+    text-decoration: none ;
+    font-size: 20px;
+    text-align: center;
 }
 
-#whatever{
+ #Contact_Me{
+    height:30px;
+    width:120px;
+    text-decoration: none ;
+    font-size: 20px;
+    text-align: center;
+ }
+
+ #Blogs{
+    height:30px;
+    width:75px;
+    margin-right: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    
+ }
+
+ #Name:hover{
+    transform: scale(1.1);
+    
+ }
+
+ .Header a:hover{
+    animation: s 1s ease ;
+    transform: scale(1.1);
+    color: white;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    
+ }
+
+ @keyframes select{
+    from{
+        height: 30px;
+        width: 120px;
+        position: relative;
+        right:200px;
+        background-color: #050c9c;
+
+    }
+    to{
+        position: relative;
+        right: 0;
+        background-color: white;
+    }
+ }
+ #About_Me:hover{
+    transform: scale(1.1);
+ }
+
+ #Contact_Me:hover{
+    transform: scale(1.1);
+ }
+ 
+ #Blogs:hover{
+    transform: scale(1.1);
+ }
+
+ /* #Projects:active{
+    color: white;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    text-align: center;
+ } */
+
+ #About_Me:active{
+    color: white;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    text-align: center;
+ }
+ 
+
+ #Contact_Me:active{
+    color: white;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    text-align: center;
+ }
+ 
+ 
+ #Blogs:active{
+    color: white;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    text-align: center;
+ 
+ }
+
+ #intro{
+    
+    position: absolute;
+    left: 20px;
+    text-align: center;
+    height:300px;
+    width: 700px;
+    background-color: #3572EF;
+    border-style: solid;
+    border-color:#3572EF ;
+    border-radius: 50px;
+    padding: 30px;
+    margin: 20px;
+    margin-top:100px;
     display: inline;
+ }
+ #photo{
+    display: inline;
+    position: absolute;
+    left: 20px;
+    text-align: center;
+    height:488px;
+    width: 605px;
+    background-color:white;
+    padding: 30px;
+    margin: 20px;
+    margin-left: 800px;
+    margin-top: 65px;
+    background:transparent;
+    background-size: contain;
+    background-image: url("D:/python/flask/css/Portfolio/Untitled Project (1).jpg") ;
+    transition: 1.5s;
+    
+ }
+
+ 
+ #photo:hover{
+    background-size: contain;
+    background-image: url("D:/python/flask/css/Portfolio/Untitled Project.jpg") ;
+    transform: scale(0.95);
+    transition:3s ;
+
+ }
+
+#Name_intro{
+    animation: slide 1s ease;
+font-size: 55px;
+font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+    
+
+#rest_intro{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation: slide 1s ease ;
+}
+
+
+.options{
+    width:700px;
+    height: 80px;
+    font-size: 30px;
+    margin-top: 100px;
+    background-color: #050c9c;
+    border-radius: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation: slide 3s ease 1s  ;
+    display: flex;
+    justify-content: space-around;
+    padding:20px;
+   text-align: center;
+   
+}
+
+#Recent_Blogs{
+            height:50px;
+            width:210px;
+            border-style: solid;
+            border-color: #050c9c;
+            border-radius: 20px;
+            background-color: #70cdf1;
+            color: black;
+            text-decoration: none;
+            text-align: center;
+            padding:10px;
+}
+#Recent_Blogs:hover{
+
+         background-color:#3ABEF9 ;
+         transition: 0.001s;
+}
+#Video_Resume{
+   height:50px;
+            width:400px;
+            border-style: solid;
+            border-color: #050c9c;
+            border-radius: 20px;
+            background-color: #70cdf1;
+            color: black;
+            text-decoration: none;
+            text-align: center;
+            padding:10px;
+}
+#Video_Resume:hover{
+
+   background-color:#3ABEF9 ;
+   transition: 0.001s;
+}
+#facebook{
+    position: absolute;
+    bottom: 20px;
+    margin-right:70px ;
+    margin-left: 100px;
+    height:50px;
+    width: 50px;
+    background-color: white;
+    background-size: contain;
+    background-image: url("D:/python/flask/css/Portfolio/Untitled design (2).png");
+}
+
+#twitter{position: absolute;
+   bottom: 20px;
+   margin-right:70px;
+   margin-left: 150px;
+   height:50px;
+   width: 50px;
+   background-color: white;
+   background-size: contain;
+   background-image: url("D:/python/flask/css/Portfolio/Untitled design (3).png");
+
+}
+#linkedin{position: absolute;
+   bottom: 20px;
+   margin-right:70px ;
+   margin-left: 200px;
+   height:50px;
+   width: 50px;
+   background-color: white;
+   background-size: contain;
+   background-image: url("D:/python/flask/css/Portfolio/Untitled design (4).png");
+
+}
+@keyframes slide {
+    from{
+        position: relative;
+        right:200px;
+        color: #3572EF;
+    }
+    to{
+        position: relative;
+        right:0px;
+    }
+
+}
+
+ #footer{
+    position: absolute;
+    bottom: 0px;
+    width:100vw;
+    background-color: #95addb;
+    display: block;
+    text-align: center;
+ }
